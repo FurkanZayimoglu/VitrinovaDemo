@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:cardCornerRadius="9dp"
+    android:layout_width="280dp"
+    android:layout_margin="12dp"
+    android:layout_height="wrap_content" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/ivNewCover"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <ImageView
+        android:id="@+id/ivNewVitrinLogo"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivNewCover"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        android:id="@+id/tvLogo"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivNewVitrinLogo"
+        app:layout_constraintLeft_toLeftOf="@+id/ivNewVitrinLogo"
+        app:layout_constraintRight_toRightOf="@+id/ivNewVitrinLogo"
+        app:layout_constraintTop_toTopOf="@+id/ivNewVitrinLogo"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:id="@+id/tvNewName"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/ivNewVitrinLogo"
+        app:layout_constraintTop_toTopOf="@+id/ivNewVitrinLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/tvNewDefinition"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/ivNewVitrinLogo"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewName"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginEnd="12dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:id="@+id/tvNewProductCount"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ivNewVitrinLogo"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewDefinition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>

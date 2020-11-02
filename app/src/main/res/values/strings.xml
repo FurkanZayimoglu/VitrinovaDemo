@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VitrinovaDemo</string>
+    <string name="r_n_veya_vitrin_ara">Ürün veya vitrin ara</string>
+    <string name="en_yen_r_nler">EN YENİ ÜRÜNLER</string>
+    <string name="yön"><![CDATA[>]]></string>
+    <string name="categoryimage">categoryImage</string>
+    <string name="vitrine_git">Vitrine git</string>
+    <string name="takip_et">Takip Et</string>
+    <string name="t_m">TÜMÜ</string>
+    <string name="en_yeni_vitrinler">En Yeni Vitrinler</string>
+</resources>
